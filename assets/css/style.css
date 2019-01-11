@@ -94,6 +94,13 @@ header {
 .slicknav_menu a {
     color: #fff;
 }
+.slicknav_nav a{
+    transition: .3s;
+}
+.slicknav_nav a:hover{
+    color: #F63854;
+    text-decoration: none;
+}
 /*Slick Nav for mobile*/
 .sticky{
     background-image: url('../images/background-image/footer-top-overlay.jpg');
