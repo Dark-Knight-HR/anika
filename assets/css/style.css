@@ -78,6 +78,7 @@ header {
     top: 0;
     left: 0;
     position: fixed;
+    -webkit-transition:.3s;
     transition: .3s;
     height: 50px;
 }
@@ -95,6 +96,7 @@ header {
     color: #fff;
 }
 .slicknav_nav a{
+    -webkit-transition:.3s;
     transition: .3s;
 }
 .slicknav_nav a:hover{
@@ -131,6 +133,7 @@ nav ul li a {
     font-size: 17px;
     text-transform: capitalize;
     font-weight: 700;
+    -webkit-transition:.3s;
     transition: .3s;
 }
 nav ul li a:hover {
@@ -179,13 +182,14 @@ nav ul li a:hover {
     position: relative;
     z-index: 1;
 }
-#home::before {
+#home:before {
     position: absolute;
     content: '';
     background-image: url('../images/background-image/overlay.jpg');
     width: 100%;
     height: 100%;
     opacity: 0.5;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
     z-index: -1;
 }
 .home-content {
@@ -214,6 +218,7 @@ nav ul li a:hover {
     background: #F63854;
     color: #fff;
     font-weight: 400;
+    -webkit-transition:.3s;
     transition: .3s;
 }
 .btn-success:hover {
@@ -243,7 +248,6 @@ nav ul li a:hover {
     font-weight: 600;
     text-transform: uppercase;
     line-height: 1.5;
-    padding-top: ;
 }
 .about_content p, .single_blog p {
     font-size: 17px;
@@ -261,10 +265,12 @@ nav ul li a:hover {
 .single_blog img{
     width: 100%;
     display: block;
+    -webkit-transition:.5s;
     transition: .5s;
 }
 .single_blog {
     overflow: hidden;
+    -webkit-transition:.5s;
     transition: .5s;
     box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.5);
     border-radius: 5px;
@@ -283,10 +289,12 @@ nav ul li a:hover {
     padding: 5px;
 }
 .blog_title i{
+    -webkit-transition:.3s;
     transition: .3s;
 }
 .single_blog:hover img {
-    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
 }
 .blog_title:hover i {
     margin-left: 5px;
@@ -300,6 +308,7 @@ nav ul li a:hover {
     padding-top: 20px;
 }
 .blog_title {
+    -webkit-transition:.3s;
     transition: .3s;
     color: #333;
     font-weight: 700;
@@ -307,6 +316,7 @@ nav ul li a:hover {
     text-transform: uppercase;
 }
 .blog_link {
+    -webkit-transition:.3s;
     transition: .3s;
     color: #333;
     font-weight: 700;
@@ -328,38 +338,49 @@ nav ul li a:hover {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     font-size: 100px;
+    -webkit-transition:.5s;
     transition: .5s;
     opacity: 0;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
     visibility: hidden;
     color: #fff;
 }
-.single_gallery::before {
+.single_gallery:before {
     position: absolute;
     content: '';
     background: #000;
     width: 100%;
     height: 100%;
     opacity: 0.6;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+    -webkit-transition:.5s;
     transition: .5s;
     opacity: 0;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
     visibility: hidden;
-    transform: scale(0);
+    -webkit-transform: scale(0);
+            transform: scale(0);
 }
-.single_gallery:hover::before{
+.single_gallery:hover:before{
     visibility: visible;
     opacity: 0.5;
-    transform: scale(1);
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    -webkit-transform: scale(1);
+            transform: scale(1);
 }
 .single_gallery:hover a i{
     visibility: visible;
     opacity: 1;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
 
 /*Gallery ends*/
 .fa-phone-volume {
-    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
 }
 /*Main contact*/
 .contact-footer{
@@ -395,6 +416,7 @@ nav ul li a:hover {
     color: #fff;
     font-size: 16px;
     margin-bottom: 0px;
+    -webkit-transition:.3s;
     transition: .3s;
 }
 .contact-us li a:hover, .contact-us li p:hover, .important_links li a:hover{
@@ -405,6 +427,7 @@ nav ul li a:hover {
     background-color: #4267b2;
     width: 100%;
     height: 100%;
+    -webkit-transition:.3s;
     transition: .3s;
     text-align: center;
     border-radius: 50%;
@@ -414,6 +437,7 @@ nav ul li a:hover {
     background-color: #DD4D42;
     width: 100%;
     height: 100%;
+    -webkit-transition:.3s;
     transition: .3s;
     text-align: center;
     border-radius: 50%;
@@ -423,6 +447,7 @@ nav ul li a:hover {
     background-color: #1DA1F2;
     width: 100%;
     height: 100%;
+    -webkit-transition:.3s;
     transition: .3s;
     text-align: center;
     border-radius: 50%;
@@ -432,6 +457,7 @@ nav ul li a:hover {
     background-color: #0274B3;
     width: 100%;
     height: 100%;
+    -webkit-transition:.3s;
     transition: .3s;
     text-align: center;
     border-radius: 50%;
@@ -491,6 +517,7 @@ footer {
     width: 100%;
     height: 100%;
     opacity: 0.5;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
     z-index: -1;
 }
 .other_home p {
@@ -525,6 +552,7 @@ hr{
     font-weight: 700;
     font-size: 20px;
     color: #fff;
+    -webkit-transition:.3s;
     transition: .3s;
 }
 .item_description a:hover, .table th a:hover {
@@ -535,6 +563,7 @@ hr{
     color: #fff;
     text-transform: uppercase;
     font-size: 16px;
+    -webkit-transition:.3s;
     transition: .3s;
 }
 .items {
@@ -558,6 +587,9 @@ form .form-control {
 }
 form .btn{
     color: #fff;
+}
+.jumbotron hr{
+    background-color: #000;
 }
 /*Contact ends*/
 .profile{
@@ -604,6 +636,7 @@ form .btn{
 }
 #nav-overview .blog_title {
     color: #fff;
+    -webkit-transition:.3s;
     transition: .3s;
 }
 #nav-overview .blog_title:hover{
@@ -614,6 +647,7 @@ form .btn{
 }
 #nav-overview .blog_link {
     color: #fff;
+    -webkit-transition:.3s;
     transition: .3s;
 }
 #nav-overview .blog_link:hover{
@@ -648,6 +682,7 @@ form .btn{
 }
 #nav-blog p, #nav-blog a {
     color: #fff;
+    -webkit-transition:.3s;
     transition: .3s;
 }
 #nav-blog p:hover, #nav-blog a:hover {
