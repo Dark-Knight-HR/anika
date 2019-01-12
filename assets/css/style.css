@@ -559,12 +559,13 @@ hr{
     text-decoration: none;
     color: #F63854;
 }
-.table th a {
+.table th a{
     color: #fff;
     text-transform: uppercase;
     font-size: 16px;
     -webkit-transition:.3s;
     transition: .3s;
+    font-weight: 700;
 }
 .items {
     float: right;
